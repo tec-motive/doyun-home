@@ -7,7 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 a{
     text-decoration: none;
@@ -69,7 +69,9 @@ p {
 .brand h1 span{
     color: #1db954;
 }
+
 /* Header Section */
+
 #header {
     position: fixed;
     z-index: 1000;
@@ -144,7 +146,6 @@ p {
     z-index: 100;
     height: 60px;
     width: 60px;
-    display: inline-block;
     border: 3px solid white;
     border-radius: 50%;
     position: relative;
@@ -198,6 +199,7 @@ p {
 /* EndHeader Section */
 
 /* Hero Section */
+
 #hero {
     background-image: url(./img/beach.jpg);
     background-size: cover;
@@ -264,6 +266,7 @@ p {
 }
 
 /* End Hero Section */
+
 
 /* Service Section */
 
@@ -333,6 +336,7 @@ p {
 /* End Service Section */
 
 /* Project section */
+
 #projects .projects {
     flex-direction: column;
     max-width: 1200px;
@@ -374,6 +378,13 @@ p {
     font-size: 4rem;
     font-weight: 500;
 }
+.projects .project-info h1 a{
+    color: white;
+    transition: .4s ease all;
+}
+#projects .project-info h1:hover a{
+    color: #1ed760;
+}
 #projects .project-info h2{
     font-size: 1.8rem;
     font-weight: 500;
@@ -412,6 +423,7 @@ p {
 /* End Project section */
 
 /* About Section */
+
 #about .about {
     flex-direction: column-reverse;
     text-align: center;
@@ -441,11 +453,15 @@ p {
     padding: 10px 20px;
     font-size: 2rem;
 }
+#about .col-right .cta:hover{
+    color: white;
+}
 #about .col-left .about-img{
     height: 100%;
     width: 100%;
     position: relative;
     border: 10px solid white;
+    filter: sepia(20%);
 }
 #about .col-left .about-img::after{
     content: '';
