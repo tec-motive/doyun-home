@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {  
+    font-family: 'Montserrat', sans-serifß;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid rgb(236, 220, 105);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .3s ease background-color;
+}
+
+.cta:hover {
+    color: black;
+    background-color: rgb(236, 220, 105);
+}
+
+/* header start */
+
+header {
+    background: white;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-center {
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.header-center h1{
+    padding-bottom: 10px;
+    background-image: linear-gradient(120deg, rgb(236, 220, 105) 0%, rgb(236, 220, 105) 100%);
+    background-repeat: no-repeat;
+    background-size: 50% 5%;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+}
+.header-center h1:hover {
+    background-size: 50% 20%;
+}
+
+.header-center p {
+    padding-bottom: 50px;
+} 
+
+.header-center a {
+    
+    margin: 10px 20px;
+    width: 200px;
+}
+/* header end */
+
+/* main start */
+
+main {
+    background-color: rgb(227, 232, 239);
+    width: 100%;
+    height: auto;
+}
+
+main .main-header h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 70px;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    
+}    
+
+main .items {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+main .items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: #323330;
+    box-shadow: 10px 5px 5px grey;
+    overflow: hidden;
+    background-color: rgb(246, 233, 143);
+}
+
+main .items .item .item-img {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+main .items .item .item-header {
+    background-color: rgb(246, 233, 143);
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+main .items .item .item-header h2{
+    margin: 20px auto;
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+
+/* main end */
+
+/* media query for tablet */
+
+@media only screen and (min-width: 768px) {
+    header {
+        background-image: url(https://img.icons8.com/color/480/000000/javascript.png);
+        background-repeat: no-repeat;
+        background-position: 88% 50%;
+        background-size: 300px;
+    }
+    .header-center h1 {
+        font-size: 2.7rem;
+        
+    }
+    main .main-header h1 {
+        font-weight: 600;
+    }
+    main .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    main .items .item {
+        margin: 20px 20px;
+    }
+}
+
+/* end media query for tablet */
+
+/* start media query for tablet */
+
+@media only screen and (min-width: 1200px) {
+    header {
+        margin-left: 50px;
+        background-size: 600px;
+        background-position: 80% 50%;
+    }
+
+    .header-center h1 {
+        font-size: 4rem;
+        background-size: 55% 5%;
+
+    }
+    .header-center h1:hover {
+        background-size: 55% 20%;
+    }
+    main .items{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+/* end media query for tablet */
