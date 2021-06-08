@@ -385,6 +385,11 @@ p {
 #projects .project-info h1:hover a{
     color: #1ed760;
 }
+
+#projects .project-info h1:nth-child(1):hover a {
+    color: rgb(236, 220, 105);
+}
+
 #projects .project-info h2{
     font-size: 1.8rem;
     font-weight: 500;
