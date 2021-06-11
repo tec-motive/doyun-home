@@ -189,7 +189,7 @@ Menu
 .btn-container {
   margin-bottom: 4rem;
   display: flex;
-  justify-content: center;
+  justify-content: center;;
 }
 .filter-btn {
   background: transparent;
