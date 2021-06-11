@@ -88,7 +88,7 @@ const menu = [
     title: "Noodles in Ice Soup",
     category: "noodles",
     price: 5,
-    img: "./images/noodles-in-ice-soup.jpeg",
+    img: "./images/Noodles-in-ice-soup.jpeg",
     desc: `These buckwheat noodles are originally from Pyongyang in North Korea, but they are widely available in South Korea as well. I loved the gummy texture of the noodles and the sesame seed essence in the soup.`,
   },
   {
