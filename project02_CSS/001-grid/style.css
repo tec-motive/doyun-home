@@ -1,0 +1,192 @@
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+     font-family: 'Cafe24Oneprettynight', serif;
+    
+}
+
+span {
+    font-size: .5rem;
+    font-weight: 600;
+}
+h1 {
+    font-size: .7rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: .43rem;
+    line-height: 1.6;
+}
+
+.grid-container {
+    padding-left: 10px;
+    min-height: 100vh;
+    display: grid;
+    gap: 30px;
+    grid-template: 
+    "title-kor" 30px
+    "title-es" 1fr
+    "verso-1-kor " 1fr
+    "verso-1-es" 1fr
+    "verso-2-kor " 1fr
+    "verso-2-es" 1fr   
+    "verso-3-kor " 1fr
+    "verso-3-es" 1fr
+    "verso-4-kor " 1fr
+    "verso-4-es" 1fr
+    /1fr;
+}
+
+.title-kor {
+    margin-top: 20px;
+    grid-area: title-kor;
+}
+
+.title-es {
+    grid-area: title-es;
+}
+
+
+.verse-1-kor {
+    grid-area: verso-1-kor;
+}
+
+.verse-1-es {
+    grid-area: verso-1-es;
+    color: white;
+    transition: all .5s ease;
+}
+
+
+.verse-1-es.active {
+    color: black;
+}
+
+.verse-2-kor {
+    grid-area: verso-2-kor;
+    
+}
+
+.verse-2-es {
+    grid-area: verso-2-es;
+    color: white;
+    transition: all .5s ease;
+}
+
+.verse-2-es.active {
+    color: black;
+}
+
+.verse-3-kor {
+    grid-area: verso-3-kor;
+}
+
+.verse-3-es {
+    grid-area: verso-3-es;
+    color: white;
+    transition: all .5s ease;
+}
+
+.verse-3-es.active {
+    color: black;
+}
+
+.verse-4-kor {
+    grid-area: verso-4-kor;
+}
+
+.verse-4-es {
+    grid-area: verso-4-es;
+    color: white;
+    transition: all .5s ease;
+}
+
+.verse-4-es.active {
+    color: black;
+}
+
+/* start tablet mediaquery */
+
+@media only screen and (min-width: 767px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+    body {
+        /* font-family: 'Noto Sans KR', sans-serif; */
+    }
+
+    .grid-container {
+        gap: 80px 10px;
+        grid-template: 
+        "title-kor title-es" 1fr
+        "verso-1-kor verso-1-es" 1fr
+        "verso-2-kor verso-2-es" 1fr   
+        "verso-3-kor verso-3-es" 1fr
+        "verso-4-kor verso-4-es" 1fr
+        /1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+
+    }
+    .title-es {
+        padding-top: 20px;
+    }
+}
+    
+
+/* end start tablet mediaquery */
+
+/* start desktop mediaquery */
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 2.3rem; 
+        font-weight: 200;
+    }
+    span {
+        display: block;
+        padding-left: 200px;
+
+        
+    }
+    p {
+        font-size: .65rem;
+    }
+
+    .grid-container {
+        gap: 0px 0px;
+        grid-template: 
+        "title-kor verso-1-kor verso-1-es title-es" 1fr
+        "title-kor verso-2-kor verso-2-es title-es" 1fr
+        "title-kor verso-3-kor verso-3-es title-es" 1fr
+        "title-kor verso-4-kor verso-4-es title-es" 1fr
+        / 1fr 1fr 1fr 1fr;
+    }
+
+
+}
+
+/* end desktop mediaquery */

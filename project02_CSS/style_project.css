@@ -23,7 +23,7 @@ img {
     padding: 10px 20px;
     color: black;
     background-color: transparent;
-    border: 2px solid rgb(236, 220, 105);
+    border: 2px solid #2EA8D8;
     border-radius: 5px;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -32,8 +32,8 @@ img {
 }
 
 .cta:hover {
-    color: black;
-    background-color: rgb(236, 220, 105);
+    color: white;
+    background-color: #2EA8D8;
 }
 
 /* header start */
@@ -55,7 +55,7 @@ header {
 }
 .header-center h1{
     padding-bottom: 10px;
-    background-image: linear-gradient(120deg, rgb(236, 220, 105) 0%, rgb(236, 220, 105) 100%);
+    background-image: linear-gradient(120deg, #2EA8D8 0%, #2EA8D8 100%);
     background-repeat: no-repeat;
     background-size: 50% 5%;
     background-position: 0 88%;
@@ -122,13 +122,13 @@ main .items .item .item-img {
     overflow: hidden;
     max-width: 450px;
 }
-
 main .items .item .item-img img {
     height: 100%;
     overflow: hidden;
 }
+
 main .items .item .item-header {
-    background-color: rgb(246, 233, 143);
+    background-color: #2EA8D8;
     width: 100%;
     text-align: center;
     height: 100%;
@@ -137,6 +137,7 @@ main .items .item .item-header h2{
     margin: 20px auto;
     font-size: 1.0rem;
     font-weight: 300;
+    color: white;
 }
 
 /* main end */
@@ -145,10 +146,10 @@ main .items .item .item-header h2{
 
 @media only screen and (min-width: 768px) {
     header {
-        background-image: url(https://img.icons8.com/color/480/000000/javascript.png);
+        background-image: url(../img/CSS3_logo.png);
         background-repeat: no-repeat;
-        background-position: 88% 50%;
-        background-size: 300px;
+        background-position: 88% 45%;
+        background-size: 200px;
     }
     .header-center h1 {
         font-size: 2.7rem;
@@ -174,8 +175,8 @@ main .items .item .item-header h2{
 @media only screen and (min-width: 1200px) {
     header {
         
-        background-size: 600px;
-        background-position: 90% 50%;
+        background-size: 300px;
+        background-position: 90% 45%;
     }
 
     .header-center{
